@@ -10,5 +10,10 @@ jobs:
            uses: 
                npm install
                npm list
+         - name: Run tests
+           run: npm test
+
+         - name: Build project
+           run: npm run build
 
 
