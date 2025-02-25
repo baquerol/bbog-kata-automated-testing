@@ -1,0 +1,14 @@
+name: Kata
+on: [push]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+         - name: checkout
+           uses: actions/setup-node@v1
+         - name: Install all dependencies
+           uses: 
+               npm install
+               npm list
+
+
